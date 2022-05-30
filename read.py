@@ -12,4 +12,10 @@ sum_len = 0
 for d in data:
 	L=len(d)
 	sum_len = sum_len + L
-print('平均字數是',sum_len/len(data))	
+print('平均字數是',sum_len/len(data))
+
+new = []
+for d in data:
+	if len(d) < 100 :
+		new.append(d)
+print(new[0])	
